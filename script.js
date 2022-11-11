@@ -26,8 +26,7 @@ function play(arr) {
     alert(pop1);
     cards1.push(pop1);
     show(cards);
-    let q = confirm("Выпала Q?");
-    if (q) {
+    if (pop1 == "Q") {
       alert("Ты выиграл!");
       break;
     } else {
@@ -36,8 +35,7 @@ function play(arr) {
       alert(pop2);
       cards1.push(pop2);
       show(cards);
-      let q = confirm("Выпала Q?");
-      if (q) {
+      if (pop2 == "Q") {
         alert("Я выиграл!");
         break;
       } else {
